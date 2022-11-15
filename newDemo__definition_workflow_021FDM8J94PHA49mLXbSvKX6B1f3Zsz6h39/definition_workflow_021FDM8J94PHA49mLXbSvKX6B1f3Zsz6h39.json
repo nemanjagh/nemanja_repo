@@ -1,0 +1,27 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_021FDM8J94PHA49mLXbSvKX6B1f3Zsz6h39",
+    "name": "NewDemo",
+    "title": "NewDemo",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": null,
+    "properties": {
+      "atomic": {
+        "is_atomic": false
+      },
+      "delete_workflow_instance": false,
+      "display_name": "NewDemo",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
+    ]
+  }
+}
