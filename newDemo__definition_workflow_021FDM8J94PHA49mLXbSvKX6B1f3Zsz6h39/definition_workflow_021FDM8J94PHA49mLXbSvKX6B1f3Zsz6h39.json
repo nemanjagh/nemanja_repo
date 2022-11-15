@@ -11,7 +11,7 @@
         "is_atomic": false
       },
       "delete_workflow_instance": false,
-      "description": "This is the demo WorkFlow. ",
+      "description": "This is the demo WorkFlow. V1.5",
       "display_name": "NewDemo",
       "runtime_user": {
         "target_default": true
