@@ -35,6 +35,20 @@
           "skip_execution": false
         },
         "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_021FHO6R28TQW2R29wdp0CSnwblt4hAixVT",
+        "name": "Completed",
+        "title": "Completed",
+        "type": "logic.completed",
+        "base_type": "activity",
+        "properties": {
+          "completion_type": "succeeded",
+          "continue_on_failure": false,
+          "display_name": "Completed",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity"
       }
     ],
     "categories": [
