@@ -37,6 +37,19 @@
         "object_type": "definition_activity"
       },
       {
+        "unique_name": "definition_activity_021FHUDBMBC9O4qegyAEJEJmGvQrxSZUNhr",
+        "name": "Convert Json to Xml",
+        "title": "Convert Json to Xml",
+        "type": "core.json2xml",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Convert Json to Xml",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity"
+      },
+      {
         "unique_name": "definition_activity_021FHO6R28TQW2R29wdp0CSnwblt4hAixVT",
         "name": "Completed",
         "title": "Completed",
