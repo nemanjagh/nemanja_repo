@@ -50,6 +50,19 @@
         "object_type": "definition_activity"
       },
       {
+        "unique_name": "definition_activity_021FHYN9T5TIU1XfDMnTyXaxWA7jF4s3qJZ",
+        "name": "Escape Regex Metacharacters",
+        "title": "Escape Regex Metacharacters",
+        "type": "core.escape_regex",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Escape Regex Metacharacters",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity"
+      },
+      {
         "unique_name": "definition_activity_021FHO6R28TQW2R29wdp0CSnwblt4hAixVT",
         "name": "Completed",
         "title": "Completed",
