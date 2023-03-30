@@ -7,17 +7,17 @@
     "base_type": "workflow",
     "variables": [
       {
-        "schema_id": "datatype.string",
+        "schema_id": "datatype.secure_string",
         "properties": {
-          "value": "https://cybersecurityworks.com/blog/ransomware/all-about-hive-ransomware.html",
-          "scope": "input",
-          "name": "Blog Post URL",
-          "type": "datatype.string",
-          "description": "The URL of the blog post to investigate",
-          "is_required": true,
+          "value": "*****",
+          "scope": "local",
+          "name": "Webex Access Token",
+          "type": "datatype.secure_string",
+          "description": "The access token to use to authenticate to the Webex API. Information about using a bot, which is what we recommend, can be found here: https://developer.webex.com/docs/bots",
+          "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01KEM2V27AQ1S0NJvwTxz0hKe8vCDDBEzth",
+        "unique_name": "variable_workflow_01KEM2V27AR3N0gVUgwtrjQW64CHuEJmMST",
         "object_type": "variable_workflow"
       },
       {
@@ -51,43 +51,15 @@
       {
         "schema_id": "datatype.string",
         "properties": {
-          "value": "[]",
+          "value": "NemBot",
           "scope": "local",
-          "name": "Targets",
+          "name": "Webex Room Name",
           "type": "datatype.string",
-          "description": "Placeholder for a list of targets from your Threat Response module sightings. This will be populated automatically",
+          "description": "The name of the Webex room to post messages to. If using a bot, make sure to invite your bot to the room before attempting to send messages. If you don't want to use Webex, leave this blank",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01M34RZXV6WZR1c0BC2uy2PATxjDyAGGWm1",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.secure_string",
-        "properties": {
-          "value": "*****",
-          "scope": "local",
-          "name": "Webex Access Token",
-          "type": "datatype.secure_string",
-          "description": "The access token to use to authenticate to the Webex API. Information about using a bot, which is what we recommend, can be found here: https://developer.webex.com/docs/bots",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01KEM2V27AR3N0gVUgwtrjQW64CHuEJmMST",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "[]",
-          "scope": "local",
-          "name": "Non-Clean Observables",
-          "type": "datatype.string",
-          "description": "A JSON-formatted list of observables that have a disposition of unknown, suspicious, or malicious",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01KEM2V27AS7C5cO7MNUxW4hm2rQKvxo5tY",
+        "unique_name": "variable_workflow_01KEM2V27AHW31T48M2GZXrbAAq9UptP69T",
         "object_type": "variable_workflow"
       },
       {
@@ -107,6 +79,34 @@
       {
         "schema_id": "datatype.string",
         "properties": {
+          "value": "[]",
+          "scope": "local",
+          "name": "Targets",
+          "type": "datatype.string",
+          "description": "Placeholder for a list of targets from your Threat Response module sightings. This will be populated automatically",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01M34RZXV6WZR1c0BC2uy2PATxjDyAGGWm1",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "https://cybersecurityworks.com/blog/ransomware/all-about-hive-ransomware.html",
+          "scope": "input",
+          "name": "Blog Post URL",
+          "type": "datatype.string",
+          "description": "The URL of the blog post to investigate",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01KEM2V27AQ1S0NJvwTxz0hKe8vCDDBEzth",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
           "value": "",
           "scope": "local",
           "name": "Threat Response Environment URL",
@@ -121,15 +121,15 @@
       {
         "schema_id": "datatype.string",
         "properties": {
-          "value": "NemBot",
+          "value": "[]",
           "scope": "local",
-          "name": "Webex Room Name",
+          "name": "Non-Clean Observables",
           "type": "datatype.string",
-          "description": "The name of the Webex room to post messages to. If using a bot, make sure to invite your bot to the room before attempting to send messages. If you don't want to use Webex, leave this blank",
+          "description": "A JSON-formatted list of observables that have a disposition of unknown, suspicious, or malicious",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01KEM2V27AHW31T48M2GZXrbAAq9UptP69T",
+        "unique_name": "variable_workflow_01KEM2V27AS7C5cO7MNUxW4hm2rQKvxo5tY",
         "object_type": "variable_workflow"
       }
     ],
@@ -184,12 +184,12 @@
           {
             "unique_name": "definition_activity_01KEM3YGZEPN77K28lwF6eztbVYWsdXXKC7",
             "name": "Set Variables",
-            "title": "Fetch global variables",
+            "title": "Fetch global variables2",
             "type": "core.set_multiple_variables",
             "base_type": "activity",
             "properties": {
               "continue_on_failure": false,
-              "display_name": "Fetch global variables",
+              "display_name": "Fetch global variables2",
               "skip_execution": false,
               "variables_to_update": [
                 {
