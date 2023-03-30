@@ -7,17 +7,31 @@
     "base_type": "workflow",
     "variables": [
       {
-        "schema_id": "datatype.secure_string",
+        "schema_id": "datatype.string",
         "properties": {
-          "value": "*****",
+          "value": "https://cybersecurityworks.com/blog/ransomware/all-about-hive-ransomware.html",
+          "scope": "input",
+          "name": "Blog Post URL",
+          "type": "datatype.string",
+          "description": "The URL of the blog post to investigate",
+          "is_required": true,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01KEM2V27AQ1S0NJvwTxz0hKe8vCDDBEzth",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "[]",
           "scope": "local",
-          "name": "Webex Access Token",
-          "type": "datatype.secure_string",
-          "description": "The access token to use to authenticate to the Webex API. Information about using a bot, which is what we recommend, can be found here: https://developer.webex.com/docs/bots",
+          "name": "Sightings",
+          "type": "datatype.string",
+          "description": "Placeholder for a list of sightings from your Threat Response modules. This will be populated automatically",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01KEM2V27AR3N0gVUgwtrjQW64CHuEJmMST",
+        "unique_name": "variable_workflow_01M34GMTAK8UF4CYyTqkhFZiAJAT9jS6Mm1",
         "object_type": "variable_workflow"
       },
       {
@@ -49,59 +63,17 @@
         "object_type": "variable_workflow"
       },
       {
-        "schema_id": "datatype.string",
+        "schema_id": "datatype.secure_string",
         "properties": {
-          "value": "",
+          "value": "*****",
           "scope": "local",
-          "name": "Webex Text",
-          "type": "datatype.string",
-          "description": "Placeholder for the text to send via Webex. This will be populated automatically",
+          "name": "Webex Access Token",
+          "type": "datatype.secure_string",
+          "description": "The access token to use to authenticate to the Webex API. Information about using a bot, which is what we recommend, can be found here: https://developer.webex.com/docs/bots",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01KEM2V27AMBP0n2Gsz28uMEjJ94lciLtfa",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "NemBot",
-          "scope": "local",
-          "name": "Webex Room Name",
-          "type": "datatype.string",
-          "description": "The name of the Webex room to post messages to. If using a bot, make sure to invite your bot to the room before attempting to send messages. If you don't want to use Webex, leave this blank",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01KEM2V27AHW31T48M2GZXrbAAq9UptP69T",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Threat Response Environment URL",
-          "type": "datatype.string",
-          "description": "Placeholder for the URL of the Threat Response environment being used. You don't need to provide this, it will be fetched automatically",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01M2CTWCR6XDT3sf3eoZDj1WNHfuiDq7a6c",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "[]",
-          "scope": "local",
-          "name": "Sightings",
-          "type": "datatype.string",
-          "description": "Placeholder for a list of sightings from your Threat Response modules. This will be populated automatically",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01M34GMTAK8UF4CYyTqkhFZiAJAT9jS6Mm1",
+        "unique_name": "variable_workflow_01KEM2V27AR3N0gVUgwtrjQW64CHuEJmMST",
         "object_type": "variable_workflow"
       },
       {
@@ -121,15 +93,43 @@
       {
         "schema_id": "datatype.string",
         "properties": {
-          "value": "https://cybersecurityworks.com/blog/ransomware/all-about-hive-ransomware.html",
-          "scope": "input",
-          "name": "Blog Post URL",
+          "value": "",
+          "scope": "local",
+          "name": "Webex Text",
           "type": "datatype.string",
-          "description": "The URL of the blog post to investigate",
-          "is_required": true,
+          "description": "Placeholder for the text to send via Webex. This will be populated automatically",
+          "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01KEM2V27AQ1S0NJvwTxz0hKe8vCDDBEzth",
+        "unique_name": "variable_workflow_01KEM2V27AMBP0n2Gsz28uMEjJ94lciLtfa",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Threat Response Environment URL",
+          "type": "datatype.string",
+          "description": "Placeholder for the URL of the Threat Response environment being used. You don't need to provide this, it will be fetched automatically",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01M2CTWCR6XDT3sf3eoZDj1WNHfuiDq7a6c",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "NemBot",
+          "scope": "local",
+          "name": "Webex Room Name",
+          "type": "datatype.string",
+          "description": "The name of the Webex room to post messages to. If using a bot, make sure to invite your bot to the room before attempting to send messages. If you don't want to use Webex, leave this blank",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01KEM2V27AHW31T48M2GZXrbAAq9UptP69T",
         "object_type": "variable_workflow"
       }
     ],
